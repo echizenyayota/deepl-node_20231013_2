@@ -1,3 +1,8 @@
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+import * as deepl from 'deepl-node';
+
 const PORT = 8000;
 const axios = require("axios").default;
 const express = require("express");
